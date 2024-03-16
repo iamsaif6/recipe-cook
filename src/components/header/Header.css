@@ -1,5 +1,8 @@
 header {
-  background-image: url(../assets/header-img.jpg);
+  background-image: url(../../assets/header-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .button {

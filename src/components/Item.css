@@ -1,0 +1,15 @@
+.item_img {
+  height: 200px;
+  background-color: red;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.button_item {
+  color: #150b2b;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 13px 24px 13px 24px;
+  background: #0be58a;
+  border-radius: 50px;
+}

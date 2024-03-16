@@ -1,4 +1,4 @@
-import user from '../assets/user.png';
+import user from '../../assets/user.png';
 import './Header.css';
 // import { IoIosSearch } from 'react-icons/io';
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
         </div>
       </nav>
       <header className="rounded-[24px] text-white py-[130px]">
-        <div className="max-w-[890px] mx-auto">
+        <div className="max-w-[890px] mx-auto text-center">
           <h1 className="text-[52px] font-bold mb-6">Discover an exceptional cooking class tailored for you!</h1>
           <p className="text-[18px]">
             Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an

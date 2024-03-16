@@ -1,94 +1,75 @@
-const recipes = [
-    {
-      recipe_id: 1,
-      recipe_img: "chicken_recipe.jpg",
-      name: "Basil Chicken Stir-Fry",
-      description: "A flavorful and quick stir-fry dish with tender chicken and fresh basil leaves.",
-      ingredients: [
-        "550 g chicken",
-        "120 ml soy sauce",
-        "200 g basil leaves",
-        "400 g mushrooms"
-      ],
-      preparing_time: "30 min",
-      calories: 320
-    },
-    {
-      recipe_id: 2,
-      recipe_img: "pasta_recipe.jpg",
-      name: "Creamy Mushroom Pasta",
-      description: "A creamy pasta dish loaded with savory mushrooms and herbs.",
-      ingredients: [
-        "300 g pasta",
-        "250 g mushrooms",
-        "200 ml cream",
-        "50 g grated parmesan cheese"
-      ],
-      preparing_time: "25 min",
-      calories: 450
-    },
-    {
-      recipe_id: 3,
-      recipe_img: "salad_recipe.jpg",
-      name: "Greek Salad",
-      description: "A refreshing and healthy salad with crisp vegetables and tangy feta cheese.",
-      ingredients: [
-        "200 g lettuce",
-        "150 g tomatoes",
-        "100 g cucumber",
-        "100 g feta cheese",
-        "50 g olives"
-      ],
-      preparing_time: "15 min",
-      calories: 180
-    },
-    {
-      recipe_id: 4,
-      recipe_img: "soup_recipe.jpg",
-      name: "Vegetable Minestrone Soup",
-      description: "A hearty and nutritious soup packed with assorted vegetables and pasta.",
-      ingredients: [
-        "400 g mixed vegetables (carrots, celery, zucchini)",
-        "100 g pasta",
-        "1 liter vegetable broth",
-        "50 g grated parmesan cheese"
-      ],
-      preparing_time: "40 min",
-      calories: 220
-    },
-    {
-      recipe_id: 5,
-      recipe_img: "cake_recipe.jpg",
-      name: "Chocolate Cake",
-      description: "A decadent and moist chocolate cake perfect for any occasion.",
-      ingredients: [
-        "200 g all-purpose flour",
-        "200 g sugar",
-        "100 g cocoa powder",
-        "150 ml vegetable oil",
-        "3 eggs",
-        "150 ml milk",
-        "1 tsp baking powder"
-      ],
-      preparing_time: "50 min",
-      calories: 380
-    },
-    {
-      recipe_id: 6,
-      recipe_img: "smoothie_recipe.jpg",
-      name: "Berry Blast Smoothie",
-      description: "A refreshing smoothie bursting with the flavors of mixed berries and yogurt.",
-      ingredients: [
-        "150 g mixed berries (strawberries, blueberries, raspberries)",
-        "200 ml yogurt",
-        "100 ml milk",
-        "1 banana",
-        "1 tbsp honey"
-      ],
-      preparing_time: "10 min",
-      calories: 200
-    }
-  ];
-  
-  console.log(recipes);
-  
+[
+  {
+    "recipe_id": 1,
+    "recipe_img": "https://i.ibb.co/bHwh4rJ/Rectangle-20170.png",
+    "name": "Basil Chicken Stir-Fry",
+    "description": "A flavorful and quick stir-fry dish with tender chicken and fresh basil leaves.",
+    "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushrooms"],
+    "preparing_time": "30",
+    "calories": 320
+  },
+  {
+    "recipe_id": 2,
+    "recipe_img": "https://i.ibb.co/kxB7dVT/Rectangle-20170.png",
+    "name": "Creamy Mushroom Pasta",
+    "description": "A creamy pasta dish loaded with savory mushrooms and herbs.",
+    "ingredients": ["300 g pasta", "250 g mushrooms", "200 ml cream", "50 g grated parmesan cheese"],
+    "preparing_time": "25",
+    "calories": 450
+  },
+  {
+    "recipe_id": 3,
+    "recipe_img": "https://i.ibb.co/0Fqg9v2/pexels-roman-odintsov-4551832.jpg",
+    "name": "Greek Salad",
+    "description": "A refreshing and healthy salad with crisp vegetables and tangy feta cheese.",
+    "ingredients": ["200 g lettuce", "150 g tomatoes", "100 g cucumber", "100 g feta cheese", "50 g olives"],
+    "preparing_time": "15 min",
+    "calories": 180
+  },
+  {
+    "recipe_id": 4,
+    "recipe_img": "https://i.ibb.co/zbV2NDc/pexels-foodie-factor-539451.jpg",
+    "name": "Vegetable Minestrone Soup",
+    "description": "A hearty and nutritious soup packed with assorted vegetables and pasta.",
+    "ingredients": [
+      "400 g mixed vegetables (carrots, celery, zucchini)",
+      "100 g pasta",
+      "1 liter vegetable broth",
+      "50 g grated parmesan cheese"
+    ],
+    "preparing_time": "40",
+    "calories": 220
+  },
+  {
+    "recipe_id": 5,
+    "recipe_img": "https://i.ibb.co/bbH9mG6/pexels-dima-valkov-3740237.jpg",
+    "name": "Chocolate Cake",
+    "description": "A decadent and moist chocolate cake perfect for any occasion.",
+    "ingredients": [
+      "200 g all-purpose flour",
+      "200 g sugar",
+      "100 g cocoa powder",
+      "150 ml vegetable oil",
+      "3 eggs",
+      "150 ml milk",
+      "1 tsp baking powder"
+    ],
+    "preparing_time": "50",
+    "calories": 380
+  },
+  {
+    "recipe_id": 6,
+    "recipe_img": "https://i.ibb.co/fHBSLCx/pexels-sebastian-coman-photography-3625372.jpg",
+    "name": "Berry Blast Smoothie",
+    "description": "A refreshing smoothie bursting with the flavors of mixed berries and yogurt.",
+    "ingredients": [
+      "150 g mixed berries (strawberries, blueberries, raspberries)",
+      "200 ml yogurt",
+      "100 ml milk",
+      "1 banana",
+      "1 tbsp honey"
+    ],
+    "preparing_time": "10",
+    "calories": 200
+  }
+]
