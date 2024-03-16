@@ -1,0 +1,19 @@
+header {
+  background-image: url(../assets/header-img.jpg);
+}
+
+.button {
+  font-size: 20px;
+  font-weight: 600;
+  color: #150b2b;
+  padding: 20px 30px 20px 30px;
+  background-color: #0be58a;
+  border-radius: 50px;
+  border: 2px solid #0be58a;
+}
+
+.outline-btn {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
