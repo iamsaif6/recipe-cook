@@ -38,8 +38,8 @@ const Main = () => {
       <div className="max-w-[820px] mx-auto text-center">
         <h2 className="text-[#150B2B] text-[35px] md:text-[40px] font-semibold mb-6">Our Recipes</h2>
         <p className="text-[#150b2b99] font-normal text-[16px]">
-          Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
-          elementum mauris aenean neque.
+          Our Recipes has something to tantalize your taste buds. From quick and easy weekday meals to elaborate gourmet creations, each
+          recipe is thoughtfully curated
         </p>
       </div>
       <div className="flex md:flex-row flex-col-reverse gap-8 my-12">

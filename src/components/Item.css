@@ -15,4 +15,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .button_item {
+    color: #150b2b;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 11px 20px 11px 20px;
+    background: #0be58a;
+    border-radius: 50px;
+  }
 }
