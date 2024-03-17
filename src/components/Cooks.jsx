@@ -23,7 +23,7 @@ const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
         Want to Cook : {itemsCook.length}
       </h2>
       <div>
-        <table className="text-[14px] text-[#282828b3] w-full">
+        <table className="text-[12px] md:text-[14px] text-[#282828b3] w-full">
           <thead>
             <tr className="text-left">
               {/* <th className="pb-4 invisible">Name</th> */}
@@ -39,10 +39,10 @@ const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
           <tbody className="bg-[#28282808]">
             {itemsCook.map((itemCook, idx) => (
               <tr key={itemCook.idx}>
-                <td className="px-5 py-4">{idx + 1}</td>
-                <td className="pr-5 py-4">{itemCook.name}</td>
-                <td className="pr-5 py-4">{itemCook.preparing_time} minutes</td>
-                <td className="pr-5 py-4">{itemCook.calories} calories</td>
+                <td className="px-2 md:px-5 py-4">{idx + 1}</td>
+                <td className="pr-2 md:pr-5 py-4">{itemCook.name}</td>
+                <td className="pr-3 md:pr-5 py-4">{itemCook.preparing_time} minutes</td>
+                <td className="pr-2 md:pr-5 py-4">{itemCook.calories} calories</td>
                 <td>
                   <button
                     onClick={() => {
@@ -62,7 +62,7 @@ const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
         Currently Cooking : {removeCook.length}
       </h2>
       <div>
-        <table className="text-[14px] text-[#282828b3] w-full">
+        <table className="text-[12px] md:text-[14px] text-[#282828b3] w-full">
           <thead>
             <tr className="text-left">
               <th className="pb-4 invisible">Name</th>
