@@ -20,7 +20,7 @@ const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
   return (
     <div className="md:w-2/5 border rounded-2xl py-8">
       <h2 className="text-[#282828] text-center text-[24px] font-semibold border-b max-w-[350px] mx-auto py-4 mb-6">
-        Want to cook : {itemsCook.length}
+        Want to Cook : {itemsCook.length}
       </h2>
       <div>
         <table className="text-[14px] text-[#282828b3] w-full">
@@ -57,7 +57,7 @@ const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
         </table>
       </div>
       <h2 className="text-[#282828] text-center text-[24px] font-semibold border-b max-w-[350px] mx-auto py-4 mb-6">
-        Currently cooking : {removeCook.length}
+        Currently Cooking : {removeCook.length}
       </h2>
       <div>
         <table className="text-[14px] text-[#282828b3] w-full">

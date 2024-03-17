@@ -6,17 +6,17 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const notify = () => toast.error('Already Added');
-const notify2 = () => toast.success('Added Succesfully');
+const notify2 = () => toast.info('Added to Cook List');
+const notify3 = () => toast.success('Sent For Cooking');
 
 const Main = () => {
   const [itemsCook, setItemsCook] = useState([]);
   const [removeCook, setRemoveCook] = useState([]);
 
   const handleRemoveCook = cook => {
-    console.log(cook);
+    notify3();
     const newRemoveCook = [...removeCook, cook];
     setRemoveCook(newRemoveCook);
-
     const newCook = itemsCook.filter(item => cook.recipe_id !== item.recipe_id);
     setItemsCook(newCook);
   };
