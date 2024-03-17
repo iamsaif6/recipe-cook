@@ -1,6 +1,7 @@
 import { IoMdTime } from 'react-icons/io';
 import { SlFire } from 'react-icons/sl';
 import '../components/Item.css';
+import PropType from 'prop-types';
 
 const Item = ({ items, handleCook }) => {
   const { name, description, recipe_img, ingredients, preparing_time, calories } = items;
@@ -17,7 +18,7 @@ const Item = ({ items, handleCook }) => {
           <p className="text-[#282828] text-[16px] font-medium">Ingredients : {ingredients.length}</p>
           <ul className="text-[#878787] text-[16px] font-light list-disc pl-6 space-y-2 my-4">
             {ingredients.map(single => (
-              <li>{single}</li>
+              <li key={single}>{single}</li>
             ))}
           </ul>
           <hr></hr>
@@ -45,6 +46,17 @@ const Item = ({ items, handleCook }) => {
       </div>
     </div>
   );
+};
+
+Item.propTypes = {
+  items: PropType.array.isRequired,
+  handleCook: PropType.array.isRequired,
+  name: PropType.string,
+  description: PropType.string,
+  recipe_img: PropType.string,
+  ingredients: PropType.array,
+  preparing_time: PropType.number,
+  calories: PropType.number,
 };
 
 export default Item;

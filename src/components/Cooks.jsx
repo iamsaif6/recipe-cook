@@ -1,7 +1,22 @@
+import PropType from 'prop-types';
 import '../components/Cooks.css';
 
 const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
-  const removeCook2 = removeCook;
+  // Calculate total cooking time
+  let totalTime = 0;
+  if (removeCook.length > 0) {
+    removeCook.forEach(element => {
+      totalTime += parseInt(element.preparing_time);
+    });
+  }
+
+  // Calculate total calories
+  let totalCalories = 0;
+  if (removeCook.length > 0) {
+    removeCook.forEach(element => {
+      totalCalories += parseInt(element.calories);
+    });
+  }
   return (
     <div className="md:w-2/5 border rounded-2xl py-8">
       <h2 className="text-[#282828] text-center text-[24px] font-semibold border-b max-w-[350px] mx-auto py-4 mb-6">
@@ -14,12 +29,14 @@ const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
               <th className="pb-4 invisible">Name</th>
               <th className="pb-4">Name</th>
               <th className="pb-4">Time</th>
-              <th className="pb-4">Calories</th>
+              <th colSpan="2" className="pb-4">
+                Calories
+              </th>
             </tr>
           </thead>
           <tbody className="bg-[#28282808]">
             {itemsCook.map((itemCook, idx) => (
-              <tr>
+              <tr key={itemCook.idx}>
                 <td className="px-5 py-4">{idx + 1}</td>
                 <td className="pr-5 py-4">{itemCook.name}</td>
                 <td className="pr-5 py-4">{itemCook.preparing_time} minutes</td>
@@ -53,8 +70,8 @@ const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
             </tr>
           </thead>
           <tbody className="bg-[#28282808]">
-            {removeCook2.map(itemCooks => (
-              <tr>
+            {removeCook.map(itemCooks => (
+              <tr key={itemsCook.recipe_id}>
                 <td className="px-5 py-4">1</td>
                 <td className="pr-5 py-4">{itemCooks.name}</td>
                 <td className="pr-5 py-4">{itemCooks.preparing_time} minutes</td>
@@ -63,12 +80,15 @@ const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
             ))}
           </tbody>
           <tfoot>
-            <tr>
-              <td className="text-center" colspan="3">
+            <tr className="text-[15px]">
+              <td className="text-right pr-6" colSpan="3">
                 Total Time = <br />
-                45 minutes
+                {totalTime} minutes
               </td>
-              <td class="right">200</td>
+              <td className="text-center pr-2">
+                Total Calories = <br />
+                {totalCalories} calories
+              </td>
             </tr>
           </tfoot>
         </table>
@@ -77,11 +97,10 @@ const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
   );
 };
 
-export default Cooks;
+Cooks.propTypes = {
+  itemsCook: PropType.array.isRequired,
+  handleRemoveCook: PropType.array.isRequired,
+  removeCook: PropType.array.isRequired,
+};
 
-// <tr>
-//   <td className="px-5 py-4"></td>
-//   <td className="pr-5 py-4">{itemCooks.name}</td>
-//   <td className="pr-5 py-4">{itemCooks.preparing_time} minutes</td>
-//   <td className="pr-5 py-4">{itemCooks.calories} calories</td>
-// </tr>;
+export default Cooks;
