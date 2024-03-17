@@ -1,6 +1,5 @@
 .item_img {
   height: 200px;
-  background-color: red;
   border-radius: 16px;
   margin-bottom: 24px;
 }
@@ -22,5 +21,12 @@
     padding: 11px 20px 11px 20px;
     background: #0be58a;
     border-radius: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .button_item {
+    display: block;
+    width: 100%;
   }
 }

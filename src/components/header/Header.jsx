@@ -32,7 +32,7 @@ const Header = () => {
             personalized cooking classes cater to your skill level,
           </p>
         </div>
-        <div className="flex items-center justify-center gap-3 md:gap-6 mt-5 md:mt-10">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-6 mt-5 md:mt-10">
           <a href="#" className="button">
             Explore Now
           </a>

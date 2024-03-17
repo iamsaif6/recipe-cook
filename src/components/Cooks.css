@@ -6,3 +6,11 @@
   background: #0be58a;
   padding: 9px 18px 9px 18px;
 }
+
+@media screen and (max-width: 576px) {
+  .button-cook {
+    padding: 9px 15px 9px 15px;
+    font-size: 14px;
+    display: block;
+  }
+}

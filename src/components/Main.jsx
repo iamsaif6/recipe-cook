@@ -5,9 +5,9 @@ import { toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 
-const notify = () => toast.error('Already Added');
-const notify2 = () => toast.info('Added to Cook List');
-const notify3 = () => toast.success('Sent For Cooking');
+const notify = () => toast.error('Recipe Already Exists!');
+const notify2 = () => toast.success('Selected Recipe Added');
+const notify3 = () => toast.info('Hooray!! Recipe Sent For Cooking');
 
 const Main = () => {
   const [itemsCook, setItemsCook] = useState([]);
