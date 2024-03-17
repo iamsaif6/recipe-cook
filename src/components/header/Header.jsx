@@ -1,6 +1,5 @@
 import user from '../../assets/user.png';
 import './Header.css';
-// import { IoIosSearch } from 'react-icons/io';
 const Header = () => {
   return (
     <>
@@ -29,8 +28,8 @@ const Header = () => {
         <div className="max-w-[890px] mx-auto text-center">
           <h1 className="text-[52px] font-bold mb-6">Discover an exceptional cooking class tailored for you!</h1>
           <p className="text-[18px]">
-            Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an
-            exceptionally well world-class Programmer.
+            Discover an exceptional cooking class tailored just for you! Whether you are a novice in the kitchen or a seasoned chef, our
+            personalized cooking classes cater to your skill level,
           </p>
         </div>
         <div className="flex items-center justify-center gap-6 mt-10">
