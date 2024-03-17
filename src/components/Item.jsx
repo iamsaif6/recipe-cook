@@ -9,9 +9,7 @@ const Item = ({ items, handleCook }) => {
     <div className="border rounded-2xl p-6">
       <div className="flex flex-col justify-between h-full">
         <div>
-          <div style={{ backgroundImage: `url(${recipe_img})` }} className="bg-cover bg-no-repeat  item_img">
-            {/* <img src={recipe_img} alt="" /> */}
-          </div>
+          <div style={{ backgroundImage: `url(${recipe_img})` }} className="bg-cover bg-no-repeat  item_img"></div>
           <h3 className="text-[#282828] text-[20px] mb-4">{name}</h3>
           <p className="text-[#878787] font-normal mb-4">{description}</p>
           <hr className="mb-6"></hr>

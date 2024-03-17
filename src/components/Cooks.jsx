@@ -18,7 +18,7 @@ const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
     });
   }
   return (
-    <div className="md:w-2/5 border rounded-2xl py-8">
+    <div className="md:w-2/5 w-full border rounded-2xl md:py-8">
       <h2 className="text-[#282828] text-center text-[24px] font-semibold border-b max-w-[350px] mx-auto py-4 mb-6">
         Want to Cook : {itemsCook.length}
       </h2>

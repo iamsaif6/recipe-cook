@@ -34,15 +34,15 @@ const Main = () => {
     }
   };
   return (
-    <main className="my-[100px]">
+    <main className="my-[60px] md:my-[100px]">
       <div className="max-w-[820px] mx-auto text-center">
-        <h2 className="text-[#150B2B] text-[40px] font-semibold mb-6">Our Recipes</h2>
+        <h2 className="text-[#150B2B] text-[35px] md:text-[40px] font-semibold mb-6">Our Recipes</h2>
         <p className="text-[#150b2b99] font-normal text-[16px]">
           Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
           elementum mauris aenean neque.
         </p>
       </div>
-      <div className="flex gap-8 my-12">
+      <div className="flex md:flex-row flex-col-reverse gap-8 my-12">
         <Items handleCook={handleCook}></Items>
         <Cooks removeCook={removeCook} handleRemoveCook={handleRemoveCook} itemsCook={itemsCook}></Cooks>
       </div>

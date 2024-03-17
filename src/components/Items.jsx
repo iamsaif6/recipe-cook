@@ -11,7 +11,7 @@ const Items = ({ handleCook }) => {
   }, []);
 
   return (
-    <div className="md:w-3/5">
+    <div className="md:w-3/5 w-full">
       <div className="grid grid-cols-2 gap-6">
         {items.map((items, idx) => (
           <Item key={idx} handleCook={handleCook} items={items}></Item>

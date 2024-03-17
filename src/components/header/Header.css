@@ -20,3 +20,22 @@ header {
   color: #fff;
   border-color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 14px;
+    font-weight: 600;
+    color: #150b2b;
+    padding: 10px 20px 10px 20px;
+    background-color: #0be58a;
+    border-radius: 50px;
+    border: 2px solid #0be58a;
+    text-align: center;
+  }
+
+  .outline-btn {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+  }
+}
