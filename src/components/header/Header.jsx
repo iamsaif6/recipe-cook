@@ -3,7 +3,7 @@ import './Header.css';
 const Header = () => {
   return (
     <>
-      <nav className="flex flex-col md:flex-row items-center justify-between mb-12 gap-8 md:gap-0">
+      <nav className="flex flex-col md:flex-row items-center justify-between mb-12 gap-8 md:gap-0 mt-7 md:mt-5">
         <h3 className="text-2xl font-bold text-[#150B2B]">Recipe Calories</h3>
         <ul className="text-[#150b2bb3] text-[16px] flex items-center gap-11">
           <li>

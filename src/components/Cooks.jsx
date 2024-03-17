@@ -18,8 +18,8 @@ const Cooks = ({ itemsCook, handleRemoveCook, removeCook }) => {
     });
   }
   return (
-    <div className="md:w-2/5 w-full border rounded-2xl md:py-8">
-      <h2 className="text-[#282828] text-center text-[24px] font-semibold border-b max-w-[350px] mx-auto py-4 mb-6">
+    <div className="md:w-2/5 w-full border rounded-2xl py-9 pb-10 md:pb-[50px] md:py-8 self-baseline">
+      <h2 className="text-[#282828] text-center text-[24px] font-semibold border-b max-w-[350px] mx-auto pt-0 md:pt-4 py-6 mb-6">
         Want to Cook : {itemsCook.length}
       </h2>
       <div>
