@@ -23,7 +23,7 @@
     "name": "Greek Salad",
     "description": "A refreshing and healthy salad with crisp vegetables and tangy feta cheese.",
     "ingredients": ["200 g lettuce", "150 g tomatoes", "100 g cucumber", "100 g feta cheese", "50 g olives"],
-    "preparing_time": "15 min",
+    "preparing_time": "15",
     "calories": 180
   },
   {

@@ -1,15 +1,14 @@
-import { useState } from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import Main from './components/Main';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Header></Header>
       <Main></Main>
+      <ToastContainer />
     </>
   );
 }

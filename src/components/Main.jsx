@@ -1,13 +1,37 @@
 import { useState } from 'react';
 import Cooks from './Cooks';
 import Items from './Items';
+import { toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+
+const notify = () => toast.error('Already Added');
+const notify2 = () => toast.success('Added Succesfully');
 
 const Main = () => {
   const [itemsCook, setItemsCook] = useState([]);
+  const [removeCook, setRemoveCook] = useState([]);
+
+  const handleRemoveCook = cook => {
+    console.log(cook);
+    const newRemoveCook = [...removeCook, cook];
+    setRemoveCook(newRemoveCook);
+
+    const newCook = itemsCook.filter(item => cook.recipe_id !== item.recipe_id);
+    setItemsCook(newCook);
+  };
+
+  // console.log(itemsCook, removeCook);
 
   const handleCook = item => {
-    const newItem = [...itemsCook, item];
-    setItemsCook(newItem);
+    if (itemsCook.find(itemd => itemd.recipe_id === item.recipe_id)) {
+      notify();
+      setItemsCook(itemsCook);
+    } else {
+      notify2();
+      const newItem = [...itemsCook, item];
+      setItemsCook(newItem);
+    }
   };
   return (
     <main className="my-[100px]">
@@ -20,7 +44,7 @@ const Main = () => {
       </div>
       <div className="flex gap-8 my-12">
         <Items handleCook={handleCook}></Items>
-        <Cooks itemsCook={itemsCook}></Cooks>
+        <Cooks removeCook={removeCook} handleRemoveCook={handleRemoveCook} itemsCook={itemsCook}></Cooks>
       </div>
     </main>
   );
